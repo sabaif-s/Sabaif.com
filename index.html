@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quiz App</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <div class="home-box custom-box ">
+        <h3>Instructions:</h3>
+        <p>Total number of questions: <span class="total-question" ></span></p>
+        <button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">
+            <!-- Question 1 of 5 -->
+        </div>
+        <div class="question-text">
+            <div id="img-container">
+
+            <!-- </div>
+            <div id="keyboard-container">
+             <div class="keyboard-button" data-value="A">A</div>
+             <div class="keyboard-button" data-value="B">B</div>
+             <div class="keyboard-button" data-value="C">C</div>
+             <div class="keyboard-button" data-value="D">D</div>
+             <div class="keyboard-button" data-value="E">E</div>
+             <div class="keyboard-button" data-value="F">F</div>
+            </div>
+            <input type="text" id="input-field"> -->
+            <!-- which month comes right before june? -->
+            <!-- <img src="img2.jpg" id="fullImg">
+        <span>X</span> -->
+        </div>
+        <div class="option-container">
+            <!-- <div class="option"> July</div>
+            <div class="option"> May</div>
+            <div class="option"> September</div>  
+            <div class="option"> August</div> -->
+
+        </div>   
+        <div class="next-question-btn">
+            <button type="button" id="nexts" class="btn" onclick="next()">Next</button>
+        </div>
+        <div class="answers-indicator">
+            <!-- <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div> -->
+        </div>
+     </div>
+    </div>
+      <div class="videoContainer hide">
+        <!-- <p>Hello Bro</p> -->
+      </div>
+    <div class="result-box custom-box hide">
+    <h1> Quiz Result </h1>
+    <table>
+        <tr>
+            <td>Total Question</td>
+            <td> <span class="total-question"> </span></td>
+        </tr>
+        <tr>
+            <td>Attempt</td>
+            <td> <span class="total-attempt"> </span></td>
+        </tr>
+        <tr>
+            <td>Correct</td>
+            <td> <span class="total-correct"> </span></td>
+        </tr>
+        <tr>
+            <td>Wrong</td>
+            <td> <span class="total-wrong"> </span></td>
+        </tr>
+        <tr>
+            <td>Percentage</td>
+            <td> <span class="percentage"></span></td>
+        </tr>
+        <tr>
+            <td>Your Total Score</td>
+            <td> <span class="total-score"></span></td>
+        </tr>
+    </table>
+    <button type="button" class="btn" onclick="tryAgain()"> <span class="go-to">Try Again</span></button>
+    <button type="button" class="btn" onclick="goHome()"> <span class="go-to">Go To Home Page</span></button>
+ </div>
+ <script src="random que 3.js"></script>
+ <script src="random app.js"></script>
+</body>
+</html>
