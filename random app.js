@@ -1034,7 +1034,7 @@ function preloadImage(imageUrls) {
 
   ];
 window.onload=function(){
-    preloadImage(imgurl);
+    preloadImage(imagesP);
     homeBox.querySelector(".total-question").innerHTML=quizLimit;
     setBody();
     // lazyVideo();
