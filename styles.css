@@ -949,7 +949,7 @@ body{
 }
 @media(max-width:300px){
     .result-box .btn .go-to{
-        font-size: 11px;
+        font-size: 12px;
     }
     .result-box h1{
         font-size: 26px;
