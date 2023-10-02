@@ -977,7 +977,64 @@ function lazyVideo(){
     
     // createReaction2(preloaded,selectedVideo);
 }
+function preloadImage(imageUrls) {
+    let loadedImages = 0;
+    let totalImages = imageUrls.length;
+
+    // Iterate through the imageUrls array
+    imageUrls.forEach(function(url) {
+      let img = new Image();
+      img.onload = function() {
+        loadedImages++;
+
+        // Check if all images have been loaded
+        if (loadedImages === totalImages) {
+          // All images have been preloaded, hide the loading screen
+          document.getElementById("loading-screen").style.display = "none";
+        }
+      };
+      img.src = url;
+    });
+  }
+
+  // Usage
+  let imagesP = [
+    "aagaa/img5.jpg",
+    "aagaa/img6.jpg",
+    "aagaa/img7.jpg",
+    "aagaa/img8.jpg",
+    "aagaa/img9.jpg",
+    "aagaa/img10.jpg",
+    "aagaa/img11.jpg",
+    "aagaa/img12.jpg",
+    "alex/img5.jpg",
+    "alex/img6.jpg",
+    "alex/img7.jpg",
+    "alex/img8.jpg",
+    "alex/img9.jpg",
+    "alex/img10.jpg",
+    "alex/img11.jpg",
+    "alex/img12.jpg",
+    "kerayu/img5.jpg",
+    "kerayu/img6.jpg",
+    "kerayu/img7.jpg",
+    "kerayu/img8.jpg",
+    "kerayu/img9.jpg",
+    "kerayu/img10.jpg",
+    "kerayu/img11.jpg",
+    "kerayu/img12.jpg",
+    "wenchi/img5.jpg",
+    "wenchi/img6.jpg",
+    "wenchi/img7.jpg",
+    "wenchi/img8.jpg",
+    "wenchi/img9.jpg",
+    "wenchi/img10.jpg",
+    "wenchi/img11.jpg",
+    "wenchi/img12.jpg"
+
+  ];
 window.onload=function(){
+    preloadImage(imgurl);
     homeBox.querySelector(".total-question").innerHTML=quizLimit;
     setBody();
     // lazyVideo();
